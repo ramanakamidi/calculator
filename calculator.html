@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="main">
+    <div class="outer">
+    <div class="input-div">
+        <input type="text" class="input-ele" readonly>
+    </div>
+    <div class="elements">
+        <div id="one">
+        <button onclick="
+        inputValue='';
+        document.querySelector('.input-ele').value=inputValue;
+         ">C</button>
+
+        <button
+        onclick="
+        inputValue += '%';
+        document.querySelector('.input-ele').value=inputValue;
+        ">%</button>
+
+        <button onclick="
+        inputValue += '/';
+        document.querySelector('.input-ele').value=inputValue;
+        ">/</button>
+        </div>
+        <div class="two">
+        <button onclick="
+        inputValue += '*';
+        document.querySelector('.input-ele').value=inputValue;
+        ">*</button>
+
+        <button onclick="
+        inputValue += '+';
+        document.querySelector('.input-ele').value=inputValue;
+        ">+</button>
+
+        <button onclick="
+        inputValue += '-';
+        document.querySelector('.input-ele').value=inputValue;
+        ">-</button>
+        </div>
+
+        <div class="three">
+
+        <button onclick="
+        inputValue += '0';
+        document.querySelector('.input-ele').value=inputValue;
+        ">0</button>
+        
+        <button onclick="
+        inputValue += '7';
+        document.querySelector('.input-ele').value=inputValue;
+        ">7</button>
+
+        <button onclick="
+        inputValue += '8';
+        document.querySelector('.input-ele').value=inputValue;
+        ">8</button>
+        </div>
+        <div class="four">
+        <button onclick="
+        inputValue += '9';
+        document.querySelector('.input-ele').value=inputValue;
+        ">9</button>
+
+        <button onclick="
+        inputValue += '4';
+        document.querySelector('.input-ele').value=inputValue;
+        ">4</button>
+
+        <button onclick="
+        inputValue += '5';
+        document.querySelector('.input-ele').value=inputValue;
+        ">5</button>
+        </div>
+        <div class="five">
+        <button onclick="
+        inputValue += '6';
+        document.querySelector('.input-ele').value=inputValue;
+        ">6</button>
+
+        <button onclick="
+        inputValue += '1';
+        document.querySelector('.input-ele').value=inputValue;
+        ">1</button>
+
+        <button onclick="
+        inputValue += '2';
+        document.querySelector('.input-ele').value=inputValue;
+        ">2</button>
+        </div>
+        <div class="six">
+        <button onclick="
+        inputValue += '3';
+        document.querySelector('.input-ele').value=inputValue;
+        ">3</button>
+
+        <!---main funtion-->
+        <button onclick="
+        let result = eval(inputValue);
+        let finalValue=result;
+        document.querySelector('.input-ele').value=finalValue;
+
+
+        
+        ">=</button>
+        </div>
+
+
+    </div>
+    
+    </div>
+    </div>
+
+
+    <script>
+        let inputValue = '';
+        
+        
+    </script>
+</body>
+</html>
